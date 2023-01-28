@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# inspired by
+# https://www.lotharschulz.info/2021/05/11/macos-setup-automation-with-homebrew/
+
 if ! command -v brew; then
     echo "Instalando homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
