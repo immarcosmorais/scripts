@@ -35,6 +35,8 @@ _cask_apps=(
     android-file-transfer gitahead docker android-platform-tools
     # Reunioes
     zoom skype
+    # Mensagens
+    whatsapp telegram
     # Outros
     adguard clickup google-drive miro transmission vlc discord hot notion
     rectangle tunnelblick wpsoffice utm cakebrew maccy spotify
