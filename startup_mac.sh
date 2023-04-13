@@ -23,7 +23,7 @@ _packages=(
     # Desenvolvimento
     nvm git gradle maven
     # Outros
-    btop htop transmission-cli
+    btop htop scrcpy
 )
 
 _cask_apps=(
@@ -36,7 +36,7 @@ _cask_apps=(
     # Reunioes
     zoom skype
     # Mensagens
-    whatsapp telegram
+    # whatsapp telegram
     # Outros
     adguard clickup google-drive miro transmission vlc discord hot notion
     rectangle tunnelblick wpsoffice utm cakebrew maccy spotify
@@ -45,14 +45,14 @@ _cask_apps=(
 IFS=$'\n' _apps_sorted=($(sort <<<"${_packages[*]}"))
 unset IFS
 
+echo "Instalando apps casks..."
+brew install --cask ${_apps_sorted[@]}
+
 echo "Instalando pacotes..."
 brew install ${_apps_sorted[@]}
 
 IFS=$'\n' _apps_sorted=($(sort <<<"${_cask_apps[*]}"))
 unset IFS
-
-echo "Instalando apps casks..."
-brew install --cask ${_apps_sorted[@]}
 
 sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade setuptools
