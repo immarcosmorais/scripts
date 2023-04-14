@@ -23,7 +23,7 @@ _packages=(
     # Desenvolvimento
     nvm git gradle maven
     # Outros
-    btop htop transmission-cli
+    btop htop scrcpy
 )
 
 _cask_apps=(
@@ -32,11 +32,11 @@ _cask_apps=(
     #Ides
     visual-studio-code intellij-idea-ce pycharm-ce jetbrains-toolbox postman
     # Desenvolvimento
-    android-file-transfer gitahead docker android-platform-tools dbeaver-community
+    android-file-transfer gitahead docker android-platform-tools dbeaver-community github
     # Reunioes
     zoom skype
     # Mensagens
-    whatsapp telegram
+    # whatsapp telegram
     # Outros
     adguard clickup google-drive miro transmission vlc discord hot notion
     rectangle tunnelblick wpsoffice utm cakebrew maccy spotify
