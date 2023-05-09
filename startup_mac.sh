@@ -21,7 +21,7 @@ _packages=(
     # Linguagens
     pypy python
     # Desenvolvimento
-    node git gradle maven yarn nvm
+    node git gradle maven yarn
     # Outros
     btop htop scrcpy
 )
