@@ -32,7 +32,7 @@ _cask_apps=(
     #Ides
     visual-studio-code intellij-idea-ce pycharm-ce jetbrains-toolbox postman
     # Desenvolvimento
-    android-file-transfer gitahead docker android-platform-tools dbeaver-community github mongodb-compass
+    android-file-transfer gitahead docker android-platform-tools dbeaver-community github mongodb-compass jupyterlab anaconda
     # Reunioes
     zoom skype
     # Mensagens
