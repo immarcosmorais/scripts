@@ -54,6 +54,9 @@ unset IFS
 echo "Instalando apps casks..."
 brew install --cask ${_apps_sorted[@]}
 
+echo "alias python=/usr/bin/python3" >>~/.zshrc
+echo "alias pip=/usr/local/bin/pip3" >>~/.zshrc
+
 sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade setuptools
 
