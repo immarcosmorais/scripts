@@ -19,7 +19,7 @@ fi
 
 _packages=(
     # Linguagens
-    pypy python
+    python
     # Desenvolvimento
     git gradle maven
     # Outros
