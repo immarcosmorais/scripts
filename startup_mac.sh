@@ -21,7 +21,7 @@ _packages=(
     # Linguagens
     python
     # Desenvolvimento
-    git gradle maven
+    git gradle maven nvm
     # Outros
     btop htop scrcpy
 )
@@ -54,25 +54,27 @@ unset IFS
 echo "Instalando apps casks..."
 brew install --cask ${_apps_sorted[@]}
 
+# Configurando Python
 echo "alias python=/opt/homebrew/bin/python3" >>~/.zshrc
 echo "alias pip=/opt/homebrew/bin/pip3" >>~/.zshrc
 
 sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade setuptools
 
-if ! command -v nvm; then
-    echo "Instalando nvm..."
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-    nvm install --lts
-    nvm use --lts
-fi
+# Configurando NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
+mkdir ~/.nvm
+nvm install --lts
+nvm use --lts
+
+# Configurando Git
 git config --global user.email "marcosmorais.contact@gmail.com"
 git config --global user.name "Marcos Morais"
 
+# Configurando brew
 brew update
 brew upgrade
 brew cleanup
