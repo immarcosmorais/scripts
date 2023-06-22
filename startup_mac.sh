@@ -21,7 +21,7 @@ _packages=(
     # Linguagens
     python
     # Desenvolvimento
-    git gradle maven nvm
+    git gradle maven nvm yarn
     # Outros
     btop htop scrcpy
 )
@@ -30,7 +30,7 @@ _cask_apps=(
     # Linguages
     oracle-jdk-javadoc oracle-jdk
     #Ides
-    visual-studio-code intellij-idea-ce pycharm-ce jetbrains-toolbox postman
+    visual-studio-code intellij-idea-ce postman
     # Desenvolvimento
     android-file-transfer gitahead docker android-platform-tools dbeaver-community github mongodb-compass jupyterlab anaconda
     # Reunioes
@@ -38,8 +38,8 @@ _cask_apps=(
     # Mensagens
     # whatsapp telegram
     # Outros
-    adguard clickup google-drive miro transmission vlc discord hot notion
-    rectangle tunnelblick wpsoffice utm cakebrew maccy spotify logi-options-plus
+    adguard clickup google-drive transmission vlc discord hot notion
+    rectangle tunnelblick wpsoffice utm maccy spotify logi-options-plus
 )
 
 IFS=$'\n' _apps_sorted=($(sort <<<"${_packages[*]}"))
