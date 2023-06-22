@@ -23,7 +23,7 @@ _packages=(
     # Desenvolvimento
     git gradle maven nvm yarn
     # Outros
-    btop htop scrcpy
+    htop scrcpy
 )
 
 _cask_apps=(
