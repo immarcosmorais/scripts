@@ -38,8 +38,7 @@ _cask_apps=(
     # Mensagens
     # whatsapp telegram
     # Outros
-    adguard clickup google-drive transmission vlc discord hot notion
-    rectangle tunnelblick wpsoffice utm maccy spotify logi-options-plus
+    adguard clickup google-drive transmission vlc hot notion rectangle tunnelblick wpsoffice utm maccy spotify logi-options-plus
 )
 
 IFS=$'\n' _apps_sorted=($(sort <<<"${_packages[*]}"))
